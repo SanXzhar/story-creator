@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homework</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="page">
+        <div class="navbar">
+            <div class="Mad_libs element" id="mad">Mad libs</div>
+            <div class="Tom_Thumb element" id="tom">Tom Thumb</div>
+            <div class="theme element" id="theme">Change to dark theme</div>
+        </div>
+        <div class="mainpage">
+            <div class="form">
+                <div><input class="el" type="text" id="name" name="name" placeholder="name" required></div>
+                <div><input class="el" type="text" id="secondname" name="secondname" placeholder="secondname" required></div>
+                <div><input class="el" type="text" id="adverb" name="adverb" placeholder="adverb" required></div>
+                <div><input class="el" type="text" id="city" name="city" placeholder="city" required></div>
+                <div><button id="but" type="submit">Create a story</button></div>
+                <div class="out"><p class="el output" id="out1"></p></div>
+            </div>
+        </div>
+        <div class="mainpage2">
+            <div class="form">
+                <div><input class="lit" type="number" id="width" placeholder="image width" required></div>
+                <div><input class="lit" type="number" id="height" placeholder="image height" required></div>
+                <div><input class="lit" type="number" id="color" placeholder="color number" required></div>
+                <div><button id="cal" type="submit">Calculate image size</button></div>
+                <div class="out"><p class="el output" id="out2"></p></div>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
