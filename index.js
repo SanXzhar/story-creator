@@ -37,6 +37,7 @@ $('document').ready(function(){
         console.log(size);
     })
     const theme_color = document.getElementById('theme');
+
     $('#theme').click(function() {
         if (theme_white == true){
             document.documentElement.style.setProperty('--main-color', '#ffffff');
@@ -55,20 +56,27 @@ $('document').ready(function(){
             console.log(theme_white)
         }
     })
-        const localtheme = localStorage.getItem("theme");
+
+    const localtheme = localStorage.getItem("theme");
         
-        if (localtheme !== null && localtheme === "dark") {
-            theme_white = false;
-            document.documentElement.style.setProperty('--main-color', '#ffffff');
-            document.documentElement.style.setProperty('--second-color', '#000000');
-            localStorage.setItem("theme", "dark")
-            theme_color.textContent = 'Change to light theme';
-        }
-        else {
-            document.documentElement.style.setProperty('--main-color', '#ffffff');
-            document.documentElement.style.setProperty('--second-color', '#000000');
-            theme_color.textContent = 'Change to dark theme';
-            localStorage.setItem("theme", "light")
-            theme_white = true; 
-        }
+    if (localtheme !== null && localtheme === "dark") {
+        theme_white = false;
+        document.documentElement.style.setProperty('--main-color', '#ffffff');
+        document.documentElement.style.setProperty('--second-color', '#000000');
+        localStorage.setItem("theme", "dark")
+        theme_color.textContent = 'Change to light theme';
+    }
+    else {
+        document.documentElement.style.setProperty('--main-color', '#000000');
+        document.documentElement.style.setProperty('--second-color', '#ffffff');
+        theme_color.textContent = 'Change to dark theme';
+        localStorage.setItem("theme", "light")
+        theme_white = true; 
+    }
+
+    $('#cookie').click(function(){
+        document.cookie = "user=W mentors; path=/; expires=Wed, 15 Jun 2022 23:59:59 GMT"
+        alert( document.cookie ); 
+    })
+
 })

@@ -96,3 +96,7 @@ button {
     text-indent: 10px;
     border-radius: 5px; 
 }
+
+p {
+    color: val(--main-color)
+}
