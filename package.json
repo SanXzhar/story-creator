@@ -1,0 +1,21 @@
+{
+  "name": "homework_5",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "push": "git add .\necho 'Commit message:'\nread commit\ngit commit -m \"$commit\"\ngit push"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SanXzhar/story-creator"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SanXzhar/story-creator/issues"
+  },
+  "homepage": "https://github.com/SanXzhar/story-creator#readme"
+}
